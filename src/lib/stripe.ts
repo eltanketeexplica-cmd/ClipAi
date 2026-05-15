@@ -1,0 +1,7 @@
+import Stripe from 'stripe';
+
+export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
+  apiVersion: '2025-01-27' as any, // Use latest
+});
+
+export const PRO_PLAN_PRICE_ID = 'price_H5gg...' // Placeholder
